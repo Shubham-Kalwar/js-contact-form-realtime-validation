@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <!-- Replace with your actual logo -->
+            <img src="https://placehold.co/150x50/007bff/ffffff?text=Company+Logo" alt="Company Logo" class="logo">
+            <h1>Contact Us</h1>
+        </header>
+        <div class="form-card">
+            <form id="contactForm">
+                <!-- Name Field -->
+                <div class="form-group">
+                    <label for="name" class="label">
+                        <i class="fas fa-user"></i> Full Name
+                    </label>
+                    <div class="input-wrapper">
+                        <input type="text" id="name" name="name" placeholder="Enter your full name">
+                        <i class="fas fa-exclamation-circle error-icon" aria-hidden="true"></i>
+                    </div>
+                    <span class="error-message" id="nameError"></span>
+                </div>
+
+                <!-- Email Field -->
+                <div class="form-group">
+                    <label for="email" class="label">
+                        <i class="fas fa-envelope"></i> Email Address
+                    </label>
+                    <div class="input-wrapper">
+                        <input type="email" id="email" name="email" placeholder="Enter your email">
+                        <i class="fas fa-exclamation-circle error-icon" aria-hidden="true"></i>
+                    </div>
+                    <span class="error-message" id="emailError"></span>
+                </div>
+
+                <!-- Message Field -->
+                <div class="form-group">
+                    <label for="message" class="label">
+                        <i class="fas fa-comment"></i> Message
+                    </label>
+                    <div class="input-wrapper">
+                        <textarea id="message" name="message" rows="5" placeholder="Type your message here..."></textarea>
+                        <i class="fas fa-exclamation-circle error-icon" aria-hidden="true"></i>
+                    </div>
+                    <span class="error-message" id="messageError"></span>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+            </form>
+        </div>
+        <div class="success-message" id="successMessage">
+            <i class="fas fa-check-circle"></i>
+            Thank you! Your message has been sent successfully.
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
