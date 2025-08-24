@@ -19,4 +19,4 @@ A professional, responsive contact form built with HTML, CSS, and JavaScript, fe
 ## Setup & Usage
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+   git clone https://github.com/Shubham-Kalwar/js-contact-form-realtime-validation.git
